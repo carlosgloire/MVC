@@ -1,0 +1,7 @@
+Model: This contains the business logic and interacts with the database. It's responsible for data validation, manipulation, and retrieval. Keeping database queries and interactions within the model ensures that the database-related code is encapsulated and can be easily managed.
+
+View: The view layer is responsible for presenting data to the user. In PHP, views are typically HTML templates mixed with PHP code to dynamically generate content based on data from the controller.
+
+Controller: This layer handles user input, processes requests, and interacts with the model to fetch data. It then passes this data to the view for presentation. Controllers should not contain database queries but instead delegate this responsibility to the model layer.
+
+Separate Concerns: Each component (model, view, controller) should focus on its specific task and not encroach upon the responsibilities of the other components. This ensures code clarity, maintainability, and reusability.
